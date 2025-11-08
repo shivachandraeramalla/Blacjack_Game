@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0a3d0a, #052905);
+  color: white;
+  font-family: "Play", sans-serif;
+}
+
+#main {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px gold;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: gold;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px gold;
+}
+
+#message-el {
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #fffa90;
+}
+
+#cards-el {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  width: 70px;
+  height: auto;
+  margin: 5px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  animation: deal 0.5s ease-out forwards;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+@keyframes deal {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#sum-el,
+#player-el {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background: gold;
+  color: green;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gold;
+}
